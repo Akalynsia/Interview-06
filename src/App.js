@@ -44,7 +44,11 @@ const QUESTIONS = [
 ];
 
 function App() {
-  return <Quiz questions={QUESTIONS} />;
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <Quiz questions={QUESTIONS} />
+    </div>
+  );
 }
 
 const Quiz = ({ questions }) => {
